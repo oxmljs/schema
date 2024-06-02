@@ -1,0 +1,10 @@
+{
+    "name": "@types/oxmljs",
+    "version": "0.0.1",
+    "dependencies": {
+        "jszip": "^3.10.1"
+    },
+    "files": [
+        "*"
+    ]
+}

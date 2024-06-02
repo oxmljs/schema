@@ -1,0 +1,38 @@
+import { Endnotes } from '../schema/Wordprocessing';
+import { OxmlPart } from '../framework/OxmlPart';
+import { AlternativeFormatImportPart } from './AlternativeFormatImportPart';
+import { ChartPart } from './ChartPart';
+import { ExtendedChartPart } from './ExtendedChartPart';
+import { DiagramColorsPart } from './DiagramColorsPart';
+import { DiagramDataPart } from './DiagramDataPart';
+import { DiagramPersistLayoutPart } from './DiagramPersistLayoutPart';
+import { DiagramLayoutDefinitionPart } from './DiagramLayoutDefinitionPart';
+import { DiagramStylePart } from './DiagramStylePart';
+import { EmbeddedControlPersistencePart } from './EmbeddedControlPersistencePart';
+import { EmbeddedObjectPart } from './EmbeddedObjectPart';
+import { EmbeddedPackagePart } from './EmbeddedPackagePart';
+import { ImagePart } from './ImagePart';
+import { Model3DReferenceRelationshipPart } from './Model3DReferenceRelationshipPart';
+export declare class EndnotesPart extends OxmlPart<Endnotes> {
+    static _N: string;
+    static _R: string;
+    static _C: string;
+    static _P: string;
+    static _T: string;
+    static _E: typeof Endnotes;
+    get endnotes(): Endnotes | undefined;
+    set endnotes(root: Endnotes | undefined);
+    get alternativeFormatImportParts(): AlternativeFormatImportPart[];
+    get chartParts(): ChartPart[];
+    get extendedChartParts(): ExtendedChartPart[];
+    get diagramColorsParts(): DiagramColorsPart[];
+    get diagramDataParts(): DiagramDataPart[];
+    get diagramPersistLayoutParts(): DiagramPersistLayoutPart[];
+    get diagramLayoutDefinitionParts(): DiagramLayoutDefinitionPart[];
+    get diagramStyleParts(): DiagramStylePart[];
+    get embeddedControlPersistenceParts(): EmbeddedControlPersistencePart[];
+    get embeddedObjectParts(): EmbeddedObjectPart[];
+    get embeddedPackageParts(): EmbeddedPackagePart[];
+    get imageParts(): ImagePart[];
+    get model3DReferenceRelationshipParts(): Model3DReferenceRelationshipPart[];
+}

@@ -1,0 +1,32 @@
+import { WorksheetDrawing } from '../schema/Drawing/Spreadsheet';
+import { OxmlPart } from '../framework/OxmlPart';
+import { ChartPart } from './ChartPart';
+import { ExtendedChartPart } from './ExtendedChartPart';
+import { DiagramColorsPart } from './DiagramColorsPart';
+import { DiagramDataPart } from './DiagramDataPart';
+import { DiagramPersistLayoutPart } from './DiagramPersistLayoutPart';
+import { DiagramLayoutDefinitionPart } from './DiagramLayoutDefinitionPart';
+import { DiagramStylePart } from './DiagramStylePart';
+import { ImagePart } from './ImagePart';
+import { CustomXmlPart } from './CustomXmlPart';
+import { WebExtensionPart } from './WebExtensionPart';
+export declare class DrawingsPart extends OxmlPart<WorksheetDrawing> {
+    static _N: string;
+    static _R: string;
+    static _C: string;
+    static _P: string;
+    static _T: string;
+    static _E: typeof WorksheetDrawing;
+    get drawing(): WorksheetDrawing | undefined;
+    set drawing(root: WorksheetDrawing | undefined);
+    get chartParts(): ChartPart[];
+    get extendedChartParts(): ExtendedChartPart[];
+    get diagramColorsParts(): DiagramColorsPart[];
+    get diagramDataParts(): DiagramDataPart[];
+    get diagramPersistLayoutParts(): DiagramPersistLayoutPart[];
+    get diagramLayoutDefinitionParts(): DiagramLayoutDefinitionPart[];
+    get diagramStyleParts(): DiagramStylePart[];
+    get imageParts(): ImagePart[];
+    get customXmlParts(): CustomXmlPart[];
+    get webExtensionParts(): WebExtensionPart[];
+}

@@ -1,0 +1,14 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "@types/node": "^20.1.4",
+        "esbuild": "^0.17.18",
+        "jszip": "^3.10.1"
+    },
+    "scripts": {
+        "gen": "cd gen && node index.mjs",
+        "build:src": "node build.mjs",
+        "build:types": "tsc --emitDeclarationOnly --declaration --project tsconfig.types.json",
+        "test:circular": "npx madge --warning --circular --extensions ts ./src"
+    }
+}
